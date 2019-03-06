@@ -8,22 +8,24 @@ ang = []
 lst = []
 n = 0
 
-# total angle
+# total angle 
 
 
 def tang(ang):
     return sum(ang)
 
-# total sum of list
+# total distance travelled
 
 
 def tlst(lst):
     return sum(lst)
 
+# average distance travelled
 
 def avg(lst):
     return sum(lst) / len(lst)
 
+# average angle turned
 
 def angle(ang):
     return sum(ang) / len(ang)
