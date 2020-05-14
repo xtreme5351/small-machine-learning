@@ -86,8 +86,6 @@ print("Final predicted Distance of movement: " + str(round(py, 4)))
 print("Avg angle error: ", round(avg(totalErrorA), 4))
 print("Avg dist error: ", round(avg(totalErrorD), 4))
 
-
-
 x = ang
 y = lst
 
