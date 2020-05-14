@@ -9,6 +9,7 @@ totalErrorD = []
 ang = []
 lst = []
 n = 0
+# was too slow before, and now it isnt
 turtle.speed(100)
 
 # total angle
@@ -38,7 +39,6 @@ def prdx(totalL, totalA, average, avgDist):
     return (190 - (10 * (totalA / totalL))) + ((1 + avgDist / average) * avgDist) * (1 - avgDist / average)
 
 
-
 # n = number of times the code will run, the more it runs, the more accurate the result
 while n < 1000:
     a = random.randint(1, 360)
@@ -51,6 +51,7 @@ while n < 1000:
     lst.append(d)
     avgDist = avg(lst)
     average = avg(ang)
+    #spaceholders to make console output easier to read
     print("======")
     print("Average dist: " + str(round(avgDist, 4)) + " Average angle: " + str(round(average, 4)))
 
@@ -68,9 +69,7 @@ while n < 1000:
     print("Angular error: ", round(errorA, 4))
     print("Distance error: ", round(errorD, 4))
     totalLst.append(d)
-
     n += 1
-
 
 average = angle(ang)
 avgDist = avg(lst)
